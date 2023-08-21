@@ -1,32 +1,36 @@
 #include<stdio.h>
-int main()
-{
-	float pi=3.14;
-	int r,l,h,w,b,ch,area;
-	printf("1.Circle\n2.Rectangle\n3.Tringle");
-	printf("\nEnter Your Required Choice :");
-	scanf("%d",&ch);
-	switch(ch)
-	{
-		case 1:
-			printf("Enter The Value Of Redius :");
-			scanf("%d",&r);
-			area=pi*r*r;
-			printf("Area Of Circle Is = %d",area);
-			break;
-		case 2:
-			printf("Enter The Value Of Lenght :");
-			scanf("%d",&l);
-			printf("Enter The Value Of Width :");
-			scanf("%d",&w);
-			printf("Area Of Rectengle Is =%d",l*w);
-			break;
-		case 3:
-			printf("Enter The Value Of base :");
-			scanf("%d",&b);
-			printf("Enter The Value Of Hieght :");
-			scanf("%d",&h);
-			printf("Area Of Triangle Is =%d",h*b/2);
-			break;
-	}
+int main (){
+    float pi=3.14;
+    int r,l,w,b,h,ch,area;
+    printf("1.circle\n2.rectangle\n3.triangle");
+    printf("\nenter your choice:");
+    scanf("%d",&ch);
+    switch(ch){
+        case 1:
+        printf("enter the radius:");
+        scanf("%d",&r);
+        area= pi*r*r;
+        printf("radius of the circle=%d",area);
+        break;
+        case 2:
+        printf("enter the legnth:");
+        scanf("%d",&l);
+        printf("enter the width:");
+        scanf("%d",&w);
+        area=l*w;
+        printf("area of recantgle:%d",area);
+        break;
+        case 3:
+        printf("enter the base:");
+        scanf("%d",&b);
+        printf("enter the hight:");
+        scanf("%d",&h);
+        area=b*h/2;
+        printf("area of triangle:%d",area);
+        break;
+        default:
+        printf("enter valid value............");
+        break;
+    }
+    return 0;
 }
